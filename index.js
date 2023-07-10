@@ -14,7 +14,7 @@ app.use( express.urlencoded({ extended: true }) )
 app.use( cors() );
 app.use('/', rutasApp);
 
-const PORT = process.env.PORT || 9050;
+const PORT = 9050;
 
 app.listen(
   PORT,
