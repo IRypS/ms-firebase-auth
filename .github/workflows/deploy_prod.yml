@@ -3,7 +3,7 @@ name: Deploy image to web app service [Azure]
 on:
   push:
     branches:
-      - dev_iryps
+      - master
 
 jobs:
 

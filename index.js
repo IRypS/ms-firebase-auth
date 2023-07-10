@@ -14,11 +14,12 @@ app.use( express.urlencoded({ extended: true }) )
 app.use( cors() );
 app.use('/', rutasApp);
 
-const PORT = 9050;
+const PORT = process.env.PORT || 9050;
 
 app.listen(
   PORT,
   () => {
-    console.log(`📗 La app está funcionando en el puerto: http://localhost:${PORT}`);
+    // console.log(`📗 La app está funcionando en el puerto: http://localhost:${PORT}`);
+    console.log(`📗 La app está funcionando en: ${process.env.WEBSITE_HOSTNAME}`);
   }
 );
