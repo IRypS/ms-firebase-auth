@@ -54,4 +54,3 @@ jobs:
       with: 
         app-name: ecosalud-ms-firebase
         images: ${{ secrets.DOCKERHUB_USERNAME }}/ecosalud-ms-firebase-auth:latest
-        run-command: 'docker run -p 8082:9050 -e FIRE_WEB=AIzaSyBtPEygFp0aWka8XFUAaAzjBv_yoPCYjq0 firebase_auth_ecosalud:latest'

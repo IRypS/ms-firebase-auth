@@ -1,12 +1,12 @@
 import axios from 'axios';
 import { checkSession } from '../utils/sessionManagement.js';
 
-const API_KEY = process.env.FIRE_WEB;
 
 export const loginService = async (req, res) => {
-
-    const { email, password } = req.body;
-
+  
+  const { email, password } = req.body;
+  
+    const API_KEY = "AIzaSyBtPEygFp0aWka8XFUAaAzjBv_yoPCYjq0";
     
     try {
 
