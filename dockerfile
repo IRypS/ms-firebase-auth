@@ -5,7 +5,6 @@ WORKDIR /auth_firebase
 COPY package*.json ./
 
 RUN npm install -f
-RUN npm install docker
 
 COPY . .
 
